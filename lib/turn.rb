@@ -55,4 +55,5 @@ def turn(board)
     puts "Sorry, that is not a valid move. Please try again."
     turn(board)
   end
+  end
 end
