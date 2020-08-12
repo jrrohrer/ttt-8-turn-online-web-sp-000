@@ -50,7 +50,7 @@ def turn(board)
     #make the move for input
     move(board, index, character = "X")
     display_board(board)
-  else if
+  else
     while valid_move?(board, index) == false
     puts "Sorry, that is not a valid move. Please try again."
     turn(board)
