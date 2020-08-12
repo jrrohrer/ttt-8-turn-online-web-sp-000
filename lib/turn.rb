@@ -9,7 +9,7 @@ end
 
 # Decides whether a user's move is valid
 def valid_move?(array, index)
-  if index > 8
+  if index > 8 || index < 0
     return false
   else if position_taken?(array, index) == false
     return true
