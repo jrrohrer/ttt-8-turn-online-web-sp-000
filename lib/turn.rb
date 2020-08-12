@@ -46,13 +46,13 @@ def turn(board)
   #convert input to index
   index = input_to_index(input)
   #if index is valid
+  while valid_move?(board, index) == false
+    turn(board)
+  end
+  
   if valid_move?(board, index) == true
     #make the move for input
     move(board, index, character = "X")
     display_board(board)
-  else
-    while valid_move?(board, index) == false
-    turn(board)
-  end
   end
 end
