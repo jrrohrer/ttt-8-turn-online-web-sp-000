@@ -29,10 +29,16 @@ def position_taken?(array, index)
   end
 end
 
+# Changes the user input to an array index
 def input_to_index(input)
   input.to_i - 1
 end
 
+# Defines the user's turn choice
 def move(array, index, character = "X")
   array[index]= character
+end
+
+def turn(board)
+  puts "Please enter 1-9."
 end
