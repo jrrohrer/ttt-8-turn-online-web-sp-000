@@ -40,7 +40,7 @@ def move(array, index, character = "X")
 end
 
 def turn(board)
-  puts "Please enter 1-9."
+  puts "Please enter 1-9:"
   #get input
   input = gets.strip
   #convert input to index
@@ -52,7 +52,6 @@ def turn(board)
     display_board(board)
   else
     while valid_move?(board, index) == false
-    puts "Sorry, that is not a valid move. Please try again."
     turn(board)
   end
   end
