@@ -52,5 +52,5 @@ def turn(board)
   else
     #ask for input again until you get valid input
     puts "Sorry, that is not a valid move. Please try again."
-  #end
+  end
 end
