@@ -54,4 +54,5 @@ def turn(board)
     puts "Invalid"
     turn(board)
   end
+  end
 end
